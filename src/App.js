@@ -31,6 +31,7 @@ const App = () => (
       <Route path="/about/" component={About} />
       <Route path="/users/" component={Users} />
       <Route path="/uzduotis/:id" component={Answer} />
+      <Route path="/teisingai/:id" component={CorrectAnswer} />
       <Route path="/uzuominos" component={Hints} />
     </div>
   </Router>

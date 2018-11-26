@@ -9,7 +9,13 @@ const Hint = ({hint}) => {
   return (
     <div className="col">
       <div className="box-wrapper">
-        <Link className="link" to={`/uzduotis/${hint.id}`} key={hint.id}>
+        <Link 
+          className="link"
+          key={hint.id}
+          to={
+            isAnswered 
+              ? `/teisingai/${hint.id}` 
+              : `/uzduotis/${hint.id}`}>
           <div className={isAnswered ? "box-aswered" : "box"}>
             <i className={hint.iconPath}></i>
           </div>

@@ -1,9 +1,10 @@
 import React from "react";
 import { hints } from '../data';
+import { withRouter } from 'react-router-dom'
 
 import "./Answer.css";
 
-export class Answer extends React.Component {
+class AnswerComponent extends React.Component {
 
   constructor(props){
     super(props);
@@ -20,11 +21,12 @@ export class Answer extends React.Component {
   }
 
   validate(){
-    const {value, hint} = this.state;
+    const { history } = this.props;
+    const { value, hint } = this.state;
     
     if(value.toLowerCase() === hint.answer.toLowerCase()){
-      alert('valio');
       localStorage.setItem(hint.id, true);
+      history.push(`/teisingai/${hint.id}`)
     } else {
       console.log('ERROR');
     }
@@ -54,3 +56,5 @@ export class Answer extends React.Component {
     )
   }
 };
+
+export const Answer = withRouter(AnswerComponent);

@@ -9,6 +9,10 @@ export const hints = [
     answerText: 'Pateikite dailininko varda, pavarde',
     answer: 'Samuelis',
     answered: false,
+    congrats: {
+      title: "Samuelis Bakas",
+      description: "Nuo pat vaikystes sis dailininkas domejosi piesimu. Antrojo pasaulinio karo metais su visa siema pateko i Vilniaus geta. Nors ir apsuptas gresmingos ir ziaurios realybes astuoniu metu Samuelis buvo aprupintas popieriumi, piestukais, akvarele ir galejo testi savo pamegta uzsiemima. Cia sulauke ir pirmojo savo kurybos pripazinimo - 1943m. gete surengtoje profesionaliu dailininku parodoje greta ju darbu puikavosi 10-mecio Samuelio Bako piesiniai"
+    }
   },
   {
     id: 'h-2',
