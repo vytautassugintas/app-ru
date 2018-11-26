@@ -35,6 +35,18 @@ h1 {
   justify-content: center;
 }
 
+.box-aswered {
+  width: 192px;
+  height: 192px;
+  background: #1abc9c;
+  border-bottom: 3px solid #1abc9c;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .link {
   display: block;
 }

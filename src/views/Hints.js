@@ -4,17 +4,20 @@ import { hints } from "../data";
 
 import './Hints.css';
 
-const Hint = ({hint}) => (
-  <div className="col">
-    <div className="box-wrapper">
-      <Link className="link" to={`/uzduotis/${hint.id}`} key={hint.id}>
-        <div className="box">
-          <i className={hint.iconPath}></i>
-        </div>
-      </Link>    
+const Hint = ({hint}) => {
+  const isAnswered = localStorage.getItem(hint.id);
+  return (
+    <div className="col">
+      <div className="box-wrapper">
+        <Link className="link" to={`/uzduotis/${hint.id}`} key={hint.id}>
+          <div className={isAnswered ? "box-aswered" : "box"}>
+            <i className={hint.iconPath}></i>
+          </div>
+        </Link>
+      </div>
     </div>
-  </div>
-)
+  )
+}
 
 export const Hints = () => {
   return (

@@ -2,12 +2,12 @@ export const hints = [
   {
     id: 'h-1',
     title: 'Suraskite vieta',
-    description: '',
+    description: 'Siai vietai siandien jau 85-eri. Per siuos metus joje uzaugo ne vienas scenos profesionalas XX a. pradzioje sioje vietoje buvo isikurusi moteru gimnazija.',
     iconPath: 'far fa-star',
     imagePath: '',
     objectImagePath: '',
     answerText: 'Pateikite dailininko varda, pavarde',
-    answer: '',
+    answer: 'Samuelis',
     answered: false,
   },
   {
