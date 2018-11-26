@@ -6,8 +6,7 @@ export const Answer = ({match}) => {
 
   return (
     <div className="container">
-      <h1>Answer view</h1>
-      <h3>ID: {hint.id} {hint.iconPath}</h3>
+      <h1>{hint.title}</h1>
       <div class="hint">
         <div className="circle-icon" key={hint.id}>
           <img className="image-icon" style={{width: 64}} src={hint.iconPath} alt={hint.title}/>
