@@ -7,7 +7,7 @@ export const hints = [
     // iconPath: 'far fa-star',
     iconPath: '/assets/pencil.svg',
     imagePath: '/assets/images/rasytojasfoto.png',
-    hintImagePath: '',
+    hintImagePath: '/assets/images/rasytojas.png',
     objectImagePath: '',
     answerText: 'Pateikite rašytojo varda, pavarde',
     answer: 'Abraomas Suckeveris',
@@ -21,10 +21,11 @@ export const hints = [
   {
     id: 'h-2',
     title: 'Suraskite vietą',
-    description: 'Vieta tolerantiška visiems, tačiau puoselėjanti ir sauganti vieno žmogaus istoriją.',
+    description:
+      'Vieta tolerantiška visiems, tačiau puoselėjanti ir sauganti vieno žmogaus istoriją.',
     iconPath: '/assets/h2.svg',
     imagePath: '/assets/images/dailininkasfoto.png',
-    hintImagePath: '',
+    hintImagePath: '/assets/images/dailininkas.png',
     objectImagePath: '',
     answerText: 'Pateikite dailininko varda, pavarde',
     answer: 'Samuelis Bakas',
@@ -38,11 +39,12 @@ export const hints = [
   {
     id: 'h-3',
     title: 'Suraskite vietą',
-    description: '',
+    description:
+      'Pro stiklus - didelė gatvė, kam namie pusryčiauti, kai gali pas Renę virtuvėje.',
     // iconPath: 'fas fa-users',
     iconPath: '/assets/statue.svg',
     imagePath: '/assets/images/skulptoriusfoto.png',
-    hintImagePath: '',
+    hintImagePath: null,
     objectImagePath: '',
     answerText: 'Pateikite skulptoriaus varda, pavarde',
     answer: 'Markas Antokolskis',
@@ -50,7 +52,7 @@ export const hints = [
     congrats: {
       title: 'Markas (Morduchas) Antokolskis',
       description:
-        'Nuo pat vaikystes sis dailininkas domejosi piesimu. Antrojo pasaulinio karo metais su visa siema pateko i Vilniaus geta. Nors ir apsuptas gresmingos ir ziaurios realybes astuoniu metu Samuelis buvo aprupintas popieriumi, piestukais, akvarele ir galejo testi savo pamegta uzsiemima. Cia sulauke ir pirmojo savo kurybos pripazinimo - 1943m. gete surengtoje profesionaliu dailininku parodoje greta ju darbu puikavosi 10-mecio Samuelio Bako piesiniai',
+        'Iš pradžių kūrė medžio drožinius, vaizduojančius žydų buitines temas, vėliau – skulptūras istorinėmis ir filosofinėmis temomis. Sukūrė realizmo ir akademizmo stiliaus Rusijos istorinių asmenų – imperatorių Petro I, Jekaterinos II, Aleksandro II, metraštininko Nestoro portretinių skulptūrų ir paminklų. Sulaukė priekaištų iš rusų antisemitų, kad jis neturįs teisės vaizduoti Rusijos istorijos ir krikščioniškų temų, o iš žydų veikėjų – kad vietoje Gaono sukūrė Nestoro skulptūrą, todėl įsižeidęs išvyko į užsienį.',
     },
   },
   {
@@ -60,8 +62,7 @@ export const hints = [
     // iconPath: 'fas fa-theater-masks',
     iconPath: '/assets/theatre.svg',
     imagePath: '/assets/images/aktoriusfoto.png',
-    hintImagePath: '',
-    
+    hintImagePath: '/assets/images/aktorius.png',
     objectImagePath: '',
     answerText: 'Pateikite aktoriaus varda, pavarde',
     answer: 'Jakovas Bergolskis',
@@ -75,12 +76,12 @@ export const hints = [
   {
     id: 'h-5',
     title: 'Suraskite vietą',
-    description: ' Vienoje puseje laisva atsinaujinusi erdve, kitoje - meniškos, kurybingos ir artistiškos sielos.',
+    description:
+      ' Vienoje puseje laisva atsinaujinusi erdve, kitoje - meniškos, kurybingos ir artistiškos sielos.',
     // iconPath: 'fas fa-music',
     iconPath: '/assets/h5.svg',
     imagePath: '/assets/images/kompozitoriusfoto.png',
-    hintImagePath: '',
-    
+    hintImagePath: '/assets/images/kompozitorius.png',
     objectImagePath: '',
     answerText: 'Pateikite kompozitoriaus varda, pavarde',
     answer: 'Anatolijus Šenderovas',

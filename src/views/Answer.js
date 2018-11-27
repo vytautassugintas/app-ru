@@ -1,7 +1,7 @@
 import React from 'react'
 import { hints } from '../data'
 import { withRouter, Link } from 'react-router-dom'
-import ModalImage from 'react-modal-image'
+import { Lightbox } from 'react-modal-image'
 
 import './Answer.css'
 
@@ -14,10 +14,13 @@ class AnswerComponent extends React.Component {
       hint: hints.find(({ id }) => this.props.match.params.id === id),
       inputVal: null,
       error: false,
+      open: false,
     }
     this.handleChange = this.handleChange.bind(this)
     this.validate = this.validate.bind(this)
     this.onBlur = this.onBlur.bind(this)
+    this.openLightBox = this.openLightBox.bind(this)
+    this.closeLightbox = this.closeLightbox.bind(this)
   }
 
   handleChange(event) {
@@ -26,6 +29,14 @@ class AnswerComponent extends React.Component {
 
   onBlur() {
     this.setState(() => ({ error: false }))
+  }
+
+  closeLightbox() {
+    this.setState(() => ({ open: false }))
+  }
+
+  openLightBox() {
+    this.setState(() => ({ open: true }))
   }
 
   validate() {
@@ -47,8 +58,18 @@ class AnswerComponent extends React.Component {
   render() {
     const { hint, error } = this.state
 
+    console.log(hint.hintImagePath)
+
     return (
       <div className="container text-center answer-wrapper">
+        {this.state.open && (
+          <Lightbox
+            medium={hint.hintImagePath}
+            large={hint.hintImagePath}
+            alt="Nuotrauka"
+            onClose={this.closeLightbox}
+          />
+        )}
         <div className="flex-container flex-row">
           <div>
             <span className="back-arrow">
@@ -87,19 +108,20 @@ class AnswerComponent extends React.Component {
               <div className="error-placeholder" />
             )}
           </div>
-          <div className="a-hint-wrapper">
-            <div>
-              <p>
-                <img
-                  src="/assets/favorites.svg"
-                  alt="Pažiūrėti objekto nuotrauką"
-                  style={{ width: 48, height: 48 }}
-                />{' '}
-                Pažiūrėti objekto nuotrauką
-              </p>
+          {hint.hintImagePath && (
+            <div className="a-hint-wrapper" onClick={this.openLightBox}>
+              <div>
+                <p>
+                  <img
+                    src="/assets/favorites.svg"
+                    alt="Pažiūrėti objekto nuotrauką"
+                    style={{ width: 48, height: 48 }}
+                  />{' '}
+                  Pažiūrėti objekto nuotrauką
+                </p>
+              </div>
             </div>
-          </div>
-
+          )}
           <div className="answer-button-wrapper">
             <button
               onClick={this.validate}
