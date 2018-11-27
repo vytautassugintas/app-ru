@@ -1,3 +1,7 @@
 .answer-wrapper {
   max-width: 764px;
 }
+
+.error-message {
+  color: red;
+}

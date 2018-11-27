@@ -16,7 +16,7 @@ export const CorrectAnswer = withRouter(({ history, match }) => {
   console.log({history, match});
 
  return (
-  <div>
+  <div className="container correct-answer-wrapper">
     <h1>Teisingai</h1>
 
     <h2>{congrats.title}</h2>
