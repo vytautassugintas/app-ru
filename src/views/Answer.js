@@ -4,6 +4,8 @@ import { withRouter } from 'react-router-dom'
 
 import './Answer.css'
 
+import { isComplete } from './utils'
+
 class AnswerComponent extends React.Component {
   constructor(props) {
     super(props)
@@ -21,7 +23,7 @@ class AnswerComponent extends React.Component {
     this.setState({ value: event.target.value })
   }
 
-  onBlur(event) {
+  onBlur() {
     this.setState(() => ({ error: false }))
   }
 
@@ -31,7 +33,11 @@ class AnswerComponent extends React.Component {
 
     if (value && value.toLowerCase() === hint.answer.toLowerCase()) {
       localStorage.setItem(hint.id, true)
-      history.push(`/teisingai/${hint.id}`)
+      if (isComplete()) {
+        history.push(`/sveikiname`)
+      } else {
+        history.push(`/teisingai/${hint.id}`)
+      }
     } else {
       this.setState(() => ({ error: true }))
     }
