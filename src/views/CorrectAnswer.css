@@ -7,6 +7,11 @@
 }
 
 .img-wrapper {
+  object-fit: cover;
   padding: 24px;
-  text-align: center;
+}
+
+.img-wrapper img {
+    max-height: 100%;
+    max-width: 100%;
 }

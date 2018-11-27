@@ -1,9 +1,11 @@
 .header {
-  font-size: 96px;
-  text-shadow: 4px 4px 0px #1abc9c;
+  font-size: 76px;
+  text-shadow: 4px 4px 0px #72bcf4;
+  font-weight: 300;
 }
 
 .main-wrapper {
+  padding-top: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,14 +26,17 @@
 }
 
 .col2 {
-  background: #34495e;
+  background: #32a6f1;
   color: #ffffff;
 }
 
 .copy-wrapper {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 72px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 18%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
 }
 
 .copy-wrapper .lead {
@@ -44,7 +49,7 @@
   justify-content: center;
   width: 300px;
   height: 64px;
-  background: #34495e;
+  background: #32a6f1;
   margin-bottom: 24px;
   margin-top: 48px;
   border-radius: 4px;
@@ -57,7 +62,7 @@
 }
 
 .cta-wrapper:hover {
-  background: #2c3e50;
+  background: #2980b9;
 }
 
 .cta {
@@ -70,4 +75,27 @@
 .cta:hover {
   color: #ecf0f1;
   text-decoration: none;
+}
+
+.hp-content {
+  font-size: 22px;
+  padding-top: 36px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    padding-bottom: 20px;
+    font-size: 46px;
+    text-shadow: 2px 2px 0px #3498db;
+  }
+
+  .hp-content {
+    font-size: 16px;
+    padding: 0;
+  }
+}
+
+.hp-top-icon {
+  padding-top: 20%
 }

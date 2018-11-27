@@ -10,47 +10,43 @@ const setStartTime = () => {
 
 export const Home = () => (
   <div>
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div
           class="col-sm-7 main-wrapper"
-          style={{ paddingTop: 28, paddingLeft: 64, paddingRight: 64 }}
+          style={{ paddingLeft: 64, paddingRight: 64 }}
         >
           <div>
-            <h1 className="display-1 header">
-              Zydu kulturinis palikimas vilniuje
-            </h1>
-            <p className="lead" style={{ paddingTop: 36 }}>
-              5 uzuominos, 5 vitos, 5 objektai ir 5 atrastos Lietuvos zydu
-              kulturos asmenybes! Imink uzuomina - atrasi vieta, vietoje ieskok
-              atsakymo, kuri suvesk i atsakymo laukeli
+            <h1 className="header">Žydų kultūrinis palikimas Vilniuje</h1>
+            <p className="hp-content">
+              5 užuominos, 5 vietos, 5 objektai ir 5 atrastos Lietuvos žydų
+              kultūros asmenybės! Imink užuominą - atrasi vietą, vietoje ieškok
+              atsakymo, kurį suvesk į atsakymo laukelį.
             </p>
-            <p className="lead">Ar gali atrasti visus?</p>
+            <p className="hp-content">Ar gali atrasti visus?</p>
             <div className="center-wrapper">
               <div className="cta-wrapper">
                 <Link to="/uzuominos" className="cta" onClick={setStartTime}>
-                  PRADETI
+                  PRADĖTI
                 </Link>
               </div>
             </div>
           </div>
         </div>
         <div class="hp-col col-sm hp-col-wrap col2" style={{ paddingTop: 28 }}>
-          <div className="text-center">
-            <i class="magnifier fas fa-search" />
+          <div className="flex-contianer-center hp-top-icon">
+            <img
+              style={{ width: 102, height: 102 }}
+              src="/assets/loupe_1.svg"
+              alt="search"
+            />
           </div>
           <div className="copy-wrapper">
-            <p class="lead">
-              "Zydu kulturinis palikimas Vilniuje" - pilotinis VGTU Kurybos
-              komunikacijos studenciu projektas.
+            <p>
+              „Žydų kultūrinis palikimas Vilniuje“ - pilotinis VGTU Kūrybos
+              komunikacijos studenčių projektas. Projektas buvo sukurtas studijų
+              užduočiai, kuriai reikėjo sukurti įdomų maršrutą Vilniuje (gidą).
             </p>
-            <p className="lead">
-              Projektas buvo sukurtas studiju uzduociai, kuriai reikejo sukurti
-              idomu marsruta Vilniuje (gida).
-            </p>
-          </div>
-          <div className="question-wrapper text-center">
-            <i class="question far fa-question-circle" />
           </div>
         </div>
       </div>

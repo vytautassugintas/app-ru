@@ -1,6 +1,7 @@
 import React from 'react'
 import { hints } from '../data'
 import { withRouter, Link } from 'react-router-dom'
+import ModalImage from 'react-modal-image'
 
 import './Answer.css'
 
@@ -61,10 +62,14 @@ class AnswerComponent extends React.Component {
           </div>
           <div />
         </div>
-        <p class="text-muted">{hint.description}</p>
+        <div className="description-wrapper">
+          <p className="description-text">{hint.description}</p>
+        </div>
         <form>
           <div class="form-group">
-            <p>{hint.answerText}</p>
+            <div className="hint-answer-text-wrapper">
+              <p className="hint-answer-text">{hint.answerText}</p>
+            </div>
             <div className="answer-input-wrapper">
               <input
                 value={this.state.value}
@@ -82,6 +87,19 @@ class AnswerComponent extends React.Component {
               <div className="error-placeholder" />
             )}
           </div>
+          <div className="a-hint-wrapper">
+            <div>
+              <p>
+                <img
+                  src="/assets/favorites.svg"
+                  alt="Pažiūrėti objekto nuotrauką"
+                  style={{ width: 48, height: 48 }}
+                />{' '}
+                Pažiūrėti objekto nuotrauką
+              </p>
+            </div>
+          </div>
+
           <div className="answer-button-wrapper">
             <button
               onClick={this.validate}

@@ -1,9 +1,6 @@
 .container-box {
   max-width: 764px;
-}
-
-h1 {
-  color: #34495e;
+  padding-top: 24px;
 }
 
 .display-3 {
@@ -21,9 +18,9 @@ h1 {
 .box {
   width: 192px;
   height: 192px;
-  background: #34495e;
-  border-bottom: 3px solid #1abc9c;
-  border-radius: 12px;
+  background: #32a6f1;
+  /* border-bottom: 3px solid #1abc9c; */
+  border-radius: 50%;
 
   position: relative;
   top: 0;
@@ -39,8 +36,8 @@ h1 {
   width: 192px;
   height: 192px;
   background: #1abc9c;
-  border-bottom: 3px solid #1abc9c;
-  border-radius: 12px;
+  /* border-bottom: 3px solid #1abc9c; */
+  border-radius: 50%;
 
   display: flex;
   align-items: center;
@@ -56,7 +53,7 @@ h1 {
 }
 
 .box:hover {
-  background: #2c3e50;
+  background: #2980b9;
   top: -10px;
 }
 
@@ -71,8 +68,37 @@ i {
   justify-content: center;
 }
 
-@media only screen and (max-width: 600px) {
+.hints-header {
+  font-size: 78px;
+  font-weight: 300;
+}
+
+.hint-header-wrapper {
+  text-align: center;
+}
+
+.h-m-right {
+  margin-right: 120px;
+}
+
+.h-m-left {
+  margin-left: 120px;
+}
+
+@media only screen and (max-width: 690px) {
   .second {
     display: block;
+  }
+
+  .hints-header {
+    font-size: 48px;
+  }
+
+  .h-m-left {
+    margin-left: 0;
+  }
+
+  .h-m-right {
+    margin-right: 0;
   }
 }

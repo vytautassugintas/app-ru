@@ -7,7 +7,7 @@ import { Home } from './views/Home'
 import { Hints } from './views/Hints'
 
 const App = () => (
-  <Router>
+  <Router onUpdate={() => window.scrollTo(0, 0)}>
     <div>
       <Route path="/" exact component={Home} />
       <Route path="/uzduotis/:id" component={Answer} />

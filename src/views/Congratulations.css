@@ -1,0 +1,51 @@
+.gz-wrapper {
+  padding-top: 24px;
+  max-width: 764px;
+  text-align: center;
+}
+
+.gz-header-wrapper {
+  
+}
+
+.gz-header {
+  font-size: 48px;
+  color: #32a6f1;
+}
+
+.gz-text-wrapper {
+  padding-top: 24px;
+}
+
+.gz-text {
+  font-size: 22px;
+}
+
+.gz-timer-wrapper {
+  padding-top: 24px;
+}
+
+.gz-timer-text {
+  font-size: 22px;
+  line-height: 1;
+  margin-bottom: 0;  
+}
+
+.gz-timer {
+  font-size: 48px;
+  color: #32a6f1; 
+}
+
+
+.gz-human-icon-wrapper {
+
+}
+
+.gz-confet-icon-wrapper {
+  padding: 22px;
+}
+
+.gz-human {
+  width: 64px;
+  height: 64px;
+}
