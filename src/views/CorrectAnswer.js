@@ -17,11 +17,27 @@ export const CorrectAnswer = withRouter(({ history, match }) => {
 
   return (
     <div className="container correct-answer-wrapper">
-      <h1>Teisingai</h1>
-
-      <h2>{congrats.title}</h2>
-      <p>{congrats.description}</p>
-
+      <div className="correct-header text-center">
+        <h1>Teisingai</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-4 img-wrapper">
+          <img
+            src="https://image.ibb.co/dDW27U/Work_Section2_freelance_img1.png"
+            class="rounded-circle img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="col-md-8">
+        <h2>{congrats.title}</h2>
+          <h4 class="subheading">
+          </h4>
+          <p class="text-muted">
+          {congrats.description}
+          </p>
+        </div>
+      </div>
+      
       <div className="center-wrapper">
         <div className="cta-wrapper">
           <Link to="/uzuominos" className="cta">

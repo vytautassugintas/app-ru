@@ -53,18 +53,28 @@ class AnswerComponent extends React.Component {
         <form>
           <div class="form-group">
             <h2>{hint.answerText}</h2>
-            <input
-              value={this.state.value}
-              onChange={this.handleChange}
-              onBlur={this.onBlur}
-              className={`form-control ${error ? 'is-invalid' : ''}`}
-              aria-describedby="answer"
-            />
-            {error && <p class="error-message">Neteisingai</p>}
+            <div className="answer-input-wrapper">
+              <input
+                value={this.state.value}
+                onChange={this.handleChange}
+                onBlur={this.onBlur}
+                className={`form-control answer-input ${
+                  error ? 'is-invalid' : ''
+                }`}
+                aria-describedby="answer"
+              />
+            </div>
+            {error ? <p class="error-message">Neteisingai</p> : <div className="error-placeholder" />}
           </div>
-          <button onClick={this.validate} type="button" class="btn btn-primary">
-            Pateikti atsakyma
-          </button>
+          <div className="answer-button-wrapper">
+            <button
+              onClick={this.validate}
+              type="button"
+              class="btn btn-primary answer-button"
+            >
+              Pateikti atsakyma
+            </button>
+          </div>
         </form>
       </div>
     )
