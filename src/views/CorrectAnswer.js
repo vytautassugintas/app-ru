@@ -41,7 +41,7 @@ export const CorrectAnswer = withRouter(({ history, match }) => {
       <div className="center-wrapper">
         <div className="cta-wrapper">
           <Link to="/uzuominos" className="cta">
-            Uzuomenos
+            UZUOMINOS
           </Link>
         </div>
       </div>

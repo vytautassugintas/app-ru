@@ -1,6 +1,6 @@
 import React from 'react'
 import { hints } from '../data'
-import { withRouter } from 'react-router-dom'
+import { withRouter, Link } from 'react-router-dom'
 
 import './Answer.css'
 
@@ -48,11 +48,23 @@ class AnswerComponent extends React.Component {
 
     return (
       <div className="container text-center answer-wrapper">
-        <h1>{hint.title}</h1>
-        <h3>{hint.description}</h3>
+        <div className="flex-container flex-row">
+          <div>
+            <span className="back-arrow">
+              <Link to="/uzuominos">
+                <i class="fas fa-angle-left" />
+              </Link>
+            </span>
+          </div>
+          <div className="answer-header-wrapper">
+            <h1>{hint.title}</h1>
+          </div>
+          <div />
+        </div>
+        <p class="text-muted">{hint.description}</p>
         <form>
           <div class="form-group">
-            <h2>{hint.answerText}</h2>
+            <p>{hint.answerText}</p>
             <div className="answer-input-wrapper">
               <input
                 value={this.state.value}
@@ -64,7 +76,11 @@ class AnswerComponent extends React.Component {
                 aria-describedby="answer"
               />
             </div>
-            {error ? <p class="error-message">Neteisingai</p> : <div className="error-placeholder" />}
+            {error ? (
+              <p class="error-message">Neteisingai</p>
+            ) : (
+              <div className="error-placeholder" />
+            )}
           </div>
           <div className="answer-button-wrapper">
             <button

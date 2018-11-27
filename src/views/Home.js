@@ -29,7 +29,7 @@ export const Home = () => (
             <div className="center-wrapper">
               <div className="cta-wrapper">
                 <Link to="/uzuominos" className="cta" onClick={setStartTime}>
-                  Pradeti
+                  PRADETI
                 </Link>
               </div>
             </div>

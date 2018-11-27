@@ -1,15 +1,15 @@
 body {
   margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  padding: 24px 0 0 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
@@ -18,25 +18,25 @@ code {
 }
 
 .light-blue-txt {
- color: #72bcf4; 
+  color: #72bcf4;
 }
 
 .green-txt {
-  color: #44f132; 
+  color: #44f132;
 }
 
 .blue-bg {
   background: #32a6f1;
 }
 
-.hp-col{
+.hp-col {
   margin-bottom: -99999px;
   padding-bottom: 99999px;
 }
 
-.hp-col-wrap{
-overflow: hidden; 
-} 
+.hp-col-wrap {
+  overflow: hidden;
+}
 
 .image-icon {
   vertical-align: top;
@@ -58,10 +58,22 @@ overflow: hidden;
 }
 
 .pd-top-md {
-  padding-top: 24px
+  padding-top: 24px;
 }
 
 .pd-top-ms {
   padding-top: 12px;
 }
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-row {
+  /* flex-direction: row; */
+}
+
 

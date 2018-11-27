@@ -2,10 +2,18 @@
   max-width: 764px;
 }
 
+.answer-header-wrapper {
+  padding-bottom: 24px;
+}
+
 .answer-input-wrapper {
   display: flex;
   align-content: center;
   justify-content: center;
+}
+
+.answer-toolbar-wrapper {
+  margin-bottom: 24px;
 }
 
 .answer-input {
@@ -35,4 +43,22 @@
 
 .error-placeholder {
   height: 24px;
+}
+
+.back-arrow {
+  text-align: left;
+}
+
+.back-arrow i {
+  font-size: 48px;
+  color: #34495e !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .answer-header-wrapper {
+    align-self: center;
+  }
+  .answer-header-wrapper h1 {
+    font-size: 24px;
+  }
 }
