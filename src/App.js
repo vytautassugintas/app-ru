@@ -1,15 +1,14 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { Answer } from './views/Answer';
-import { Congratulations } from './views/Congratulations';
-import { CorrectAnswer } from './views/CorrectAnswer';
-import { Home } from './views/Home';
-import { Hints } from './views/Hints';
+import React from 'react'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { Answer } from './views/Answer'
+import { Congratulations } from './views/Congratulations'
+import { CorrectAnswer } from './views/CorrectAnswer'
+import { Home } from './views/Home'
+import { Hints } from './views/Hints'
 
-
-const Index = () => <h2>Home</h2>;
-const About = () => <h2>About</h2>;
-const Users = () => <h2>Users</h2>;
+const Index = () => <h2>Home</h2>
+const About = () => <h2>About</h2>
+const Users = () => <h2>Users</h2>
 
 const App = () => (
   <Router>
@@ -35,6 +34,6 @@ const App = () => (
       <Route path="/uzuominos" component={Hints} />
     </div>
   </Router>
-);
+)
 
-export default App;
+export default App

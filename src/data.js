@@ -2,7 +2,8 @@ export const hints = [
   {
     id: 'h-1',
     title: 'Suraskite vieta',
-    description: 'Siai vietai siandien jau 85-eri. Per siuos metus joje uzaugo ne vienas scenos profesionalas XX a. pradzioje sioje vietoje buvo isikurusi moteru gimnazija.',
+    description:
+      'Siai vietai siandien jau 85-eri. Per siuos metus joje uzaugo ne vienas scenos profesionalas XX a. pradzioje sioje vietoje buvo isikurusi moteru gimnazija.',
     iconPath: 'far fa-star',
     imagePath: '',
     objectImagePath: '',
@@ -10,9 +11,10 @@ export const hints = [
     answer: 'Samuelis',
     answered: false,
     congrats: {
-      title: "Samuelis Bakas",
-      description: "Nuo pat vaikystes sis dailininkas domejosi piesimu. Antrojo pasaulinio karo metais su visa siema pateko i Vilniaus geta. Nors ir apsuptas gresmingos ir ziaurios realybes astuoniu metu Samuelis buvo aprupintas popieriumi, piestukais, akvarele ir galejo testi savo pamegta uzsiemima. Cia sulauke ir pirmojo savo kurybos pripazinimo - 1943m. gete surengtoje profesionaliu dailininku parodoje greta ju darbu puikavosi 10-mecio Samuelio Bako piesiniai"
-    }
+      title: 'Samuelis Bakas',
+      description:
+        'Nuo pat vaikystes sis dailininkas domejosi piesimu. Antrojo pasaulinio karo metais su visa siema pateko i Vilniaus geta. Nors ir apsuptas gresmingos ir ziaurios realybes astuoniu metu Samuelis buvo aprupintas popieriumi, piestukais, akvarele ir galejo testi savo pamegta uzsiemima. Cia sulauke ir pirmojo savo kurybos pripazinimo - 1943m. gete surengtoje profesionaliu dailininku parodoje greta ju darbu puikavosi 10-mecio Samuelio Bako piesiniai',
+    },
   },
   {
     id: 'h-2',
