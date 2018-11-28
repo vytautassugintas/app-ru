@@ -58,8 +58,6 @@ class AnswerComponent extends React.Component {
   render() {
     const { hint, error } = this.state
 
-    console.log(hint.hintImagePath)
-
     return (
       <div className="container text-center answer-wrapper">
         {this.state.open && (

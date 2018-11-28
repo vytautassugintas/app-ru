@@ -1,8 +1,10 @@
 .correct-answer-wrapper {
   max-width: 764px;
+  padding-top: 24px;
 }
 
 .correct-header {
+  color: #44f132;
   padding-bottom: 28px;
 }
 

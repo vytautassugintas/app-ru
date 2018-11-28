@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import moment from 'moment';
 import './Home.css'
 
 const setStartTime = () => {
   if (!localStorage.getItem('startDate')) {
-    localStorage.setItem('startDate', new Date())
+    localStorage.setItem('startDate', new Date().getTime())
   }
 }
 

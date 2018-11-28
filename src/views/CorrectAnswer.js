@@ -16,8 +16,18 @@ export const CorrectAnswer = withRouter(({ history, match }) => {
 
   return (
     <div className="container correct-answer-wrapper">
-      <div className="correct-header text-center">
-        <h1>Teisingai</h1>
+      <div className="flex-container flex-row">
+        <div>
+          <span className="back-arrow">
+            <Link to="/uzuominos">
+              <i class="fas fa-angle-left" />
+            </Link>
+          </span>
+        </div>
+        <div className="correct-header text-center">
+          <h1>TEISINGAI!</h1>
+        </div>
+        <div />
       </div>
       <div class="row">
         <div class="col-md-4 img-wrapper">
@@ -32,7 +42,7 @@ export const CorrectAnswer = withRouter(({ history, match }) => {
       <div className="center-wrapper">
         <div className="cta-wrapper">
           <Link to="/uzuominos" className="cta">
-            UZUOMINOS
+            UŽUOMINOS
           </Link>
         </div>
       </div>

@@ -4,6 +4,10 @@ import { hints } from '../data'
 
 import './Hints.css'
 
+const reset = () => {
+  localStorage.clear()
+}
+
 const Hint = ({ hint, className }) => {
   const isAnswered = localStorage.getItem(hint.id)
   return (
@@ -43,6 +47,9 @@ export const Hints = () => {
 
           return <Hint hint={hint} />
         })}
+      </div>
+      <div className="resetWrapper text-center">
+        <Link to="/" onClick={reset}>Pradėti iš naujo</Link>
       </div>
     </div>
   )
